@@ -12,9 +12,10 @@ const {Cart} =require('./model/Cart');
 app. use(express.json());
 app.use(cors());
 app.use(morgan('dev'))
+//xeJcOjD6y6Aw9jJl
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/kleProject')
+let MONGODB_URL="mongodb+srv://belavalsneha:xeJcOjD6y6Aw9jJl@cluster0.xu6sn.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(MONGODB_URL)
 .then(()=>{
     console.log("DB is connected")
 }).catch((err)=>{
