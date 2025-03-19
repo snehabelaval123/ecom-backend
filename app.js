@@ -6,7 +6,7 @@ const cors =require('cors');
 const morgan =require('morgan');
 const bcrypt =require('bcryptjs');
 const jwt =require('jsonwebtoken');
-const {Product}= require('./model/product');
+const {Product}= require('./model/Product');
 const {Cart} =require('./model/Cart');
 
 app. use(express.json());
@@ -19,7 +19,7 @@ mongoose.connect(MONGODB_URL)
 .then(()=>{
     console.log("DB is connected")
 }).catch((err)=>{
-    console,log("db is note connected",err)
+    console.log("db is note connected",err)
 })
 
 

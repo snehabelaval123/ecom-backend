@@ -12,20 +12,20 @@ name:{
  brand:{
     type:String
  },
- stocl:{
+ stock:{
     type:Number
  },
  image:{
     type:String
  },
- descriptin:{
+ description:{
     type: String
  },
  user:{
   type:mongoose.Schema.ObjectId,
   ref: 'User'
- },
+ }
 })
 
 const Product =mongoose.model('Product',productSchema);
-module.exports={Product}
+module.exports={Product};
